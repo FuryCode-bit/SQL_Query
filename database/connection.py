@@ -1,10 +1,10 @@
 import pyodbc
 
 def database_connection():
-    server = '192.168.100.14,1433' 
+    server = 'xxxxxxxx,1433' 
     username = 'aluno'
-    password = 'alunobd2324ei' 
-    database_name = 'test2324' 
+    password = 'xxxxxxxxx' 
+    database_name = 'xxxxxxxxx' 
     db_connection_string = "Driver={ODBC Driver 17 for SQL Server};Server=" + server + ";Database=" + database_name + ";UID=" + username + ";PWD=" + password + ";"
     
     return pyodbc.connect(db_connection_string, autocommit=True)
