@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <title>SQL Query</title>
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      /* NAV BAR */
+      #nav_bar {
+        float: right;
+      }
+
+      #nav_bar li {
+        display: inline-block;
+        padding: 8px;
+      }
+
+      #nav_bar #sign_in {
+        background: #4887ef; 
+        margin-right: 25px;
+        padding: 7px 15px;
+        border-radius: 3px; 
+        font-weight: bold;
+      }
+
+      .nav-links {
+        color: #404040;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      li.nav-links a:hover {
+        text-decoration: underline;
+      }
+
+      #sign_in:hover { 
+        box-shadow: 1px 1px 5px #999;
+      }
+
+      #sign_in {
+        color: #fff;
+      }
+
+      /* GOOGLE AREA */
+      .google #google_logo {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        clear: both;
+        padding-top: 112px;
+        padding-bottom: 20px;
+      }
+
+      .form {
+        text-align: center;
+      }
+
+      #form-search { 
+        width: 60%;
+        line-height: 32px;
+        padding: 20px 10px;
+      }
+
+      .form #form-search {
+        padding: 0 8px;
+      }
+
+      .buttons {
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 300px;
+      }
+
+      /* MEDIA QUERIES */
+
+      @media screen and (max-width: 400px) {
+      
+        li.nav-links a {
+            display: none;
+          }
+          
+        #google_logo {
+          padding: 0;
+        }
+          
+        .buttons {
+          display: none;
+        }
+          
+        #form-search {
+          width: 80%;
+
+        }
+      }
+
+      @media screen and (max-width: 565px) {
+
+          li.nav-links a {
+            display: none;
+          }
+          
+          
+        #google_logo {
+          padding: 0;
+        }
+          
+        .buttons {
+          display: none;
+        }
+          
+        #form-search {
+          width: 80%;
+
+        }
+      }
+    </style>
+</head>
+  <body>
+    <!-- GOOGLE IMG -->  
+    <div class="google">
+      <a href="#" id="google_logo"><img src="https://www.macworld.com/wp-content/uploads/2023/01/setup_learn_sql_mac.jpg" alt=" photo google-logo_zpspkcztsjo.png"/></a>
+    </div>
+    
+    <!-- FORM SEARCH -->
+    <form action="/execute_query" method="post">
+        <div class="form">  
+            <label for="form-search"></label>
+            <input type="text" id="form-search" name="sql_query" placeholder="Make the Query!">
+        </div>  
+        
+        <!-- BUTTONS -->
+        <div class= "buttons">  
+            <input type="submit" value="Query" id="google_search">
+            <input type="submit" value="I'm Feeling Lucky" id="im_feeling_lucky">
+        </div>
+    </form>      
+  </body>
+</html>
